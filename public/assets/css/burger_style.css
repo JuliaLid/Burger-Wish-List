@@ -71,7 +71,10 @@ h3 {
   
   padding-bottom: 10px;
   color: #987650;
+}
 
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn {
@@ -133,6 +136,17 @@ h3 {
     margin: 5px;
     background:#ffe855;
 }
+#wish-list input[type=text] {
+  width: 5rem;
+  position: absolute;
+  right: 9rem;
+  top: 3.8rem;
+  border: #ab3c3c;
+  margin-right: 0.5rem;
+}
+#wish-list input[type=text]:focus {
+   border: #ab3c3c;
+}
 
 #wish-list button {
   font-size: .7rem;
@@ -149,6 +163,14 @@ h3 {
   background:#90f18a;
 }
 
+#devoured-burger button {
+  font-size: .7rem;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  display: inline;
+  position: absolute;
+  right: 10px;
+}
 
 footer {
   background-color:#ffed91;
