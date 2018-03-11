@@ -32,7 +32,9 @@
     * [`Sequelize`](https://www.npmjs.com/package/sequelize) for ORM.
 * [Heroku](https://www.heroku.com/) to deploy the app.
 * JawsDB Remote Database connected to Heroku app.
-## Features
+## New Features
+* Refactored all methods to use `Sequelize` queries.
+* Added a button to delete a burger from the database.
 * Used `Sequelize` validation to accomplish the following:
     * A burger's name cannot be null
     * A burger's devoured status is false by default
