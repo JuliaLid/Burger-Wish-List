@@ -15,7 +15,7 @@ $(function() {
         data: newDevouredState
       }).then(
         function() {
-          console.log("changed devoured to", devouredBurger);
+          console.log("changed devoured to",newDevouredState);
           location.reload();
         }
       );
@@ -41,5 +41,22 @@ $(function() {
         }
       );
     });
+
+    //DELETE ajax to delete burger from the database
+    $(".delete-burger").on("click", function(event) {
+      console.log("I'm clicked");
+      var id = $(this).data("id");
+      console.log(id);
+     
+      $.ajax("/api/burgers/" + id, {
+        type: "DELETE"
+      }).then(
+        function() {
+          location.reload();
+        }
+      );
+    });
+      
 });
-  
+
+

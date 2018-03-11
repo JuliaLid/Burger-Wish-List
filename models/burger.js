@@ -14,10 +14,10 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  // Post.associate = function(models) {
+  // Burger.associate = function(models) {
   //   // We're saying that a Post should belong to an Author
   //   // A Post can't be created without an Author due to the foreign key constraint
-  //   Post.belongsTo(models.Author, {
+  //   Burger.belongsTo(models.Rating, {
   //     foreignKey: {
   //       allowNull: false
   //     }
