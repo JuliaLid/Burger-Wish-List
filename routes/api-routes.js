@@ -7,7 +7,7 @@ module.exports = function(app){
 			var hbsObject = {
 				burgers:dbBurger
 			};
-		console.log(hbsObject);
+			// console.log(hbsObject);
 			res.render("index", hbsObject);
 		});
 	 }); 
@@ -28,14 +28,16 @@ module.exports = function(app){
     app.put("/api/burgers/:id", function(req, res) {
       var condition = req.params.id;
     
-      console.log("condition", condition);
+    //   console.log("condition", condition);
 	  db.Burger.update({
 			devoured: true
 		},{
 			where:{
 				id:condition
 			}
+			// order:['name', 'ASC']
 		}).then(function(dbBurger){
+			console.log("I'm special" + dbBurger);
 			if (dbBurger.changedRows === 0) {
 				return res.status(404).end();
 			}
