@@ -6,7 +6,7 @@
 * Use Sequelize library for object-relational mapping instead of vanilla mySQL queries.
 * Follow the MVC design pattern.
 ## Link to Deployed App
-* [Burger Wish List](https://burger-wish-list.herokuapp.com/)
+* [Burger Wish List](https://sequelize-burger-wish-list.herokuapp.com/)
 ## Cloning instructions
 1. Clone the repo.
 2. Run `npm install` to install dependencies in the root app folder on the local machine.
@@ -15,6 +15,7 @@
 4. Use bash terminal to run command `npm run watch` or `node server.js` to initialize the server and establish connection to the database.
 5. Open a browser window and type `localhost:3000` as the URL.
 6. Start adding, updating, and deleting burgers. 
+
 ![Alt Text](https://media.giphy.com/media/138btjfXAn1xyo/giphy.gif)
 ## Technology Stack
 * HTML5
